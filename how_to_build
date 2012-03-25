@@ -1,0 +1,47 @@
+How to build this software
+==========================
+What this document?
+This document is written how to build hash_maker.
+
+Dependencies:
+This software uses the following:
+
+* libc++ or a library like libc++: To use printf function.
+* C++ compiler: To build this software.
+* CMake: To make build process easy.
+* Make/Nmake/other make system that cmake can identify: To make build process easy.
+
+Note that Boost libraries are not needed.
+
+For windows users:
+NMake (which is known as visual studio make tool) can build this software with harmless warnings. If you don't like them, you can use MinGW.
+
+How to build:
+To build this software, open a tty/console/command prompt, and do the following:
+
+1. cd to hash_maker's path. Note that it is not subdirectory one.
+2. Make directory called "build".
+3. Go to the directory, and type:
+    cmake ..
+4. Run make system.
+    Note that the executable file is in hash_maker directory which is in "build".
+5. To install, just run "make install" (Linux only).
+
+How to use in scripts:
+If you don't want to show any outputs, you can use null device.
+To use null device, type in bash: ./make_hash [bla bla bla] > /dev/null 2>&1
+Or, if you are using windows, type in command prompt: ./make_hash [bla bla bla]>nul 2>nul
+
+Copyright:
+This document and the software(s) are copyrighted by hyamamoto, but you can modify/redistribute them without contacting the author if you act up to the following:
+
+* You need to release the source code in the case that you want redistribute this software.
+  According GPL, you must release the source code when you redistribute this software.
+* You have to describe what you changed.
+  This is assiduities for developpers who want to modify.
+
+To report bug:
+If you want to report bug, please contact to the author.
+
+The author of the software is:
+ Hiroaki Yamamoto:admin At Sign hysoftware.net
